@@ -21,7 +21,7 @@ export default function Home() {
           
           {/* Left Side Panel */}
           <Box className={styles.left}>
-            <Box className={styles.typing}> 
+            <Box className={styles.intro}> 
               <header className={styles.text}> Hi, I'm Dylan Adams. </header>
               <header className={styles.text} style={{fontSize:'20px'}}> 
                 I'm a Freshman B.S. Computer Science student  <br/> 
@@ -43,8 +43,8 @@ export default function Home() {
           </Box>
 
           {/* Right Side Panel */}
-          <Box className={styles.right} style={{background:'none', boxShadow:'5px 5px 40px'}}>
-            <Image layout="responsive" src='/Dylan-2.jpg' width={700} height={530} alt="Dylan Adams" />
+          <Box className={styles.right} style={{background:'none'}}>
+            <Image layout="responsive" src='/Dylan-2.jpg' width={700} height={530} alt="Dylan Adams" className={styles.img} />
           </Box>
 
         </Grid>

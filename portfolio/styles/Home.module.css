@@ -24,7 +24,7 @@
   justify-content: center; 
 }
 
-.typing {
+.intro {
   max-width: 38vw;
   min-height: 55vh;
   background: rgba(0,0,0,.5);
@@ -35,11 +35,11 @@
 .text {
   padding-top: 5vh;
   color: white;
-  font-size: 40px;
+  font-size: 2.5vw;
   text-align: center;
   font-family: 'Source Code Pro', monospace;
 }
 
 .img {
-  
+  box-shadow:'5px 5px 40px'
 }
