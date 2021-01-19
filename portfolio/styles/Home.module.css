@@ -1,0 +1,45 @@
+.page {
+  background-color: rgb(94, 127, 127);
+  min-height: 380vh;
+}
+
+.header {
+  background-image: linear-gradient(rgb(0, 88, 155), rgb(94, 127, 127));
+  min-height: 90vh;
+}
+
+.left {
+  background-color: rgba(0,0,0,.3);
+  margin-top: 5vh;
+  min-height: 60vh;
+  min-width: 40vw;
+  justify-content: center; 
+}
+
+.right {
+  background-color: rgba(0,0,0,.3);
+  margin-top: 5vh;
+  min-height: 35vh;
+  min-width: 35vw;
+  justify-content: center; 
+}
+
+.typing {
+  max-width: 38vw;
+  min-height: 55vh;
+  background: rgba(0,0,0,.5);
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+
+.text {
+  padding-top: 5vh;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.img {
+  
+}
