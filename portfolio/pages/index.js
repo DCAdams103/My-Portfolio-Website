@@ -1,6 +1,4 @@
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Header from '../components/Header'
 import { Grid, Box } from '@material-ui/core'
 import Image from 'next/image'
 
@@ -46,7 +44,7 @@ export default function Home() {
 
           {/* Right Side Panel */}
           <Box className={styles.right} style={{background:'none', boxShadow:'5px 5px 40px'}}>
-            <Image layout="responsive" src='/../public/Dylan-2.jpg' width={700} height={530} alt="Dylan Adams" />
+            <Image layout="responsive" src='/Dylan-2.jpg' width={700} height={530} alt="Dylan Adams" />
           </Box>
 
         </Grid>
@@ -60,9 +58,9 @@ export default function Home() {
               style={{minHeight:'10vh'}}>
           
           
-          <a href="https://www.linkedin.com/in/dylan-c-adams/" target='_blank'><Image src='/../public/linkedin.png' width={40} height={40} alt="LinkedIn" /></a>
+          <a href="https://www.linkedin.com/in/dylan-c-adams/" target='_blank'><Image src='/linkedin.png' width={40} height={40} alt="LinkedIn" /></a>
           <p style={{padding:'1vw'}} />
-          <a href="https://github.com/DCAdams103" target='_blank'><Image src='/../public/github.png'  width={40} height={40} alt="LinkedIn" /></a>
+          <a href="https://github.com/DCAdams103" target='_blank'><Image src='/github.png'  width={40} height={40} alt="LinkedIn" /></a>
 
         </Grid>
       </div>
@@ -79,7 +77,7 @@ export default function Home() {
       <br/>
 
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/../public/Frontpage1.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
+        <Image layout="responsive" src='/Frontpage1.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
       </Box>
 
       <br/>
@@ -95,7 +93,7 @@ export default function Home() {
       </header>
       <br/>
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/../public/ReactAuth.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
+        <Image layout="responsive" src='/ReactAuth.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
       </Box>
       <br/>
 
