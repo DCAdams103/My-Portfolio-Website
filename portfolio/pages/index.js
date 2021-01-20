@@ -92,7 +92,7 @@ export default function Home() {
           local real estate photography business, Real Home Photography. 
       </header>
       <header className={styles.text} style={{fontSize:'25px', paddingTop:'1%'}}> 
-          Successfully deployed at <a href="www.rhomephotography.com" target="_blank">www.rhomephotography.com</a>
+          Successfully deployed at <a href="https://www.rhomephotography.com" target="_blank">www.rhomephotography.com</a>
       </header>
 
       <br/>
