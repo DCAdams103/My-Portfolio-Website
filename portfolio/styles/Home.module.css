@@ -11,7 +11,7 @@
 .left {
   background-color: rgba(0,0,0,.3);
   margin-top: 5vh;
-  min-height: 60vh;
+  min-height: 72vh;
   min-width: 40vw;
   justify-content: center; 
 }
@@ -27,19 +27,42 @@
 .intro {
   max-width: 38vw;
   min-height: 55vh;
-  background: rgba(0,0,0,.5);
+  max-height:70vh;
+  background: rgba(0,0,0,.4);
   margin-left: 1vw;
-  margin-top: 3vh;
+  margin-top: 6vh;
 }
 
 .text {
   padding-top: 5vh;
   color: white;
-  font-size: 2.5vw;
+  font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.projectTitle {
+  padding-top: 5vh;
+  color: white;
+  font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-weight:'bold';
   text-align: center;
   font-family: 'Source Code Pro', monospace;
 }
 
 .img {
   box-shadow:'5px 5px 40px'
+}
+
+@media (max-width: 1175px)
+{
+  .left{
+    min-width: 80vw;
+  }
+
+  .intro {
+    min-width: 78vw;
+    max-height: 54vh;
+  }
+
 }
