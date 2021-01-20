@@ -113,7 +113,7 @@ export default function Home() {
       
       <header className={styles.text} style={{fontSize:'25px'}}> 
           A personal project to learn more about authentication. <br/>
-          It's build with Next.js, and connects to a local MySQL database.
+          It's built with Next.js, and connects to a local MySQL database.
       </header>
 
       <br/>
