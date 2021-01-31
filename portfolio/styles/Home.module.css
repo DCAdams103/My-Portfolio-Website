@@ -21,6 +21,7 @@
   margin-top: 5vh;
   min-height: 35vh;
   min-width: 35vw;
+  max-width: 35vw;
   justify-content: center; 
 }
 
