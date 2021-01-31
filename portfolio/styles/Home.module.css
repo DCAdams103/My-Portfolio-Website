@@ -51,7 +51,7 @@
 }
 
 .img {
-  box-shadow:'5px 5px 40px'
+  box-shadow:'5px 5px 40px' 
 }
 
 @media (max-width: 1175px)
