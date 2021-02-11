@@ -20,14 +20,13 @@
   background-color: rgba(0,0,0,.3);
   margin-top: 5vh;
   min-height: 35vh;
-  min-width: 35vw;
-  max-width: 35vw;
+  max-width: 75%;
   justify-content: center; 
 }
 
 .intro {
   max-width: 38vw;
-  min-height: 55vh;
+  
   max-height:70vh;
   background: rgba(0,0,0,.4);
   margin-left: 1vw;
@@ -35,7 +34,7 @@
 }
 
 .text {
-  padding-top: 5vh;
+  padding-top: 3vh;
   color: white;
   font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
@@ -52,7 +51,8 @@
 }
 
 .img {
-  box-shadow:'5px 5px 40px' 
+  box-shadow:'5px 5px 40px';
+  min-width: 75%;
 }
 
 @media (max-width: 1175px)
