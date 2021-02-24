@@ -29,22 +29,19 @@ export default function Home() {
 
               <header className={styles.text}> Hi, I'm Dylan Adams. </header>
 
-              <header className={styles.text} style={{fontSize:'calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));'}}> 
+              <header className={styles.text} style={{fontSize:'calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}> 
                 I'm a Freshman B.S. Computer Science student  <br/> 
                 at UNC Charlotte with a passion for <br/> 
                 programming and web development.
               </header>
 
-              <br/>
-              <br/>
-
-              <header className={styles.text} style={{fontSize:'calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));'}}>
+              <header className={styles.text} style={{fontSize:'calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}>
                 Scroll down to see my completed,<br/>
                 current, and future <br/>
                 Web Development projects.
 
                 {/* HTML for the Arrow */}
-                <header className={styles.text} style={{padding:0}}>
+                <header className={styles.text} style={{padding:0, paddingTop:'3vh'}}>
                   &#8595;
                 </header>
 
