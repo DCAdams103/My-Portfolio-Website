@@ -129,9 +129,10 @@ export default function Home() {
       
       {/* List */}
       <header className={styles.text} style={{fontSize:'25px'}}>
-          I hope to learn more about...
+          I hope to accomplish and learn more about...
           <p></p>
           <ul>
+            <li> a Calendar Desktop and Web App </li>
             <li> Authentication </li>
             <li> Redux </li>
             <li> Back-end development </li>
