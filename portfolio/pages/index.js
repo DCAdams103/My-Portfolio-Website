@@ -30,7 +30,7 @@ export default function Home() {
               <header className={styles.text}> Hi, I'm Dylan Adams. </header>
 
               <header className={styles.text} style={{fontSize:'calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}> 
-                I'm a Freshman B.S. Computer Science student  <br/> 
+                I'm a Sophomore B.S. Computer Science student  <br/> 
                 at UNC Charlotte with a passion for <br/> 
                 programming and web development.
               </header>
@@ -57,6 +57,7 @@ export default function Home() {
 
         </Grid>
 
+        {/* ------------ Social Links ------------ */}
         <header className={styles.text} style={{fontSize:'20px'}}> Find me on :</header>
         <Grid container
               spacing={0}
@@ -71,6 +72,7 @@ export default function Home() {
           <a href="https://github.com/DCAdams103" target='_blank'><Image src='/github.png'  width={40} height={40} alt="LinkedIn" /></a>
 
         </Grid>
+
       </div>
 
       {/* ------------ Bottom Half of Page ------------ */}
@@ -79,35 +81,48 @@ export default function Home() {
       {/* Divider Line */}
       <hr style={{width:'25%'}}/>
 
+      {/* ------------------------------------------- Real Home Photography ------------------------------------------ */}
+
       <header className={styles.projectTitle}> <a href="https://www.rhomephotography.com" target="_blank"> Real Home Photography </a> </header>
       <hr style={{width:'15%'}}/>
 
+      {/* Real Home Photography GitHub Link */}
       <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/Real-Home-Photography-Website" target="_blank"> View on Github </a></header>
       
+      {/* Real Home Photography Description  */}
       <header className={styles.text} style={{fontSize:'25px'}}> 
           A responsive, and mobile-friendly website I designed for a <br/>
           local real estate photography business, Real Home Photography. 
       </header>
+
+      {/* Real Home Photography Link */}
       <header className={styles.text} style={{fontSize:'25px', paddingTop:'1%'}}> 
           Successfully deployed at <a href="https://www.rhomephotography.com" target="_blank">www.rhomephotography.com</a>
       </header>
 
       <br/>
 
+      {/* Real Home Photography Photo */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
         <Image layout="responsive" src='/Frontpage1.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
       </Box>
 
       <br/>
 
+      {/* ------------------------------------------- Current Projects ------------------------------------------ */}
+
       <header className={styles.text} style={{fontSize:'60px'}}> Current Projects </header>
       <hr style={{width:'25%'}}/>
+
+      {/* ------------------------------------------- React Auth ------------------------------------------ */}
 
       <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> React Authentication </a> </header>
       <hr style={{width:'15%'}}/>
 
+      {/* React Auth GitHub Link */}
       <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> View on Github </a></header>
       
+      {/* React Auth Description */}
       <header className={styles.text} style={{fontSize:'25px'}}> 
           A personal project to learn more about authentication. <br/>
           It's built with Next.js, and connects to a local MySQL database.
@@ -115,11 +130,35 @@ export default function Home() {
 
       <br/>
 
+      {/* React Auth Images */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/ReactAuth.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
+        <Image layout="responsive" src='/ReactAuth.png' width='10vw' height='5vh'  alt="React Auth login page" />
       </Box>
 
       <br/>
+
+      {/* ------------------------------------------- React Calendar ------------------------------------------ */}
+
+      {/* React Calendar GitHub Link */}
+      <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> React Calendar </a> </header>
+      <hr style={{width:'15%'}}/>
+
+      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> View on Github </a></header>
+
+      {/* React Calendar Description */}
+      <header className={styles.text} style={{fontSize:'25px'}}> 
+          A personal project to make a basic calendar app that communicates with a database. <br/>
+          It's built with Next.js, and connects to Google's Firebase.
+      </header>
+
+      <br/>
+
+      {/* React Calendar Images */}
+      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
+        <Image layout="responsive" src='/ReactCalendar.png' width='10vw' height='5vh'  alt="React Calendar page" />
+      </Box>
+
+      {/* ------------------------------------------- Future Projects ------------------------------------------ */}
 
       <header className={styles.text} style={{fontSize:'60px'}}> Future Projects </header>
       <hr style={{width:'25%'}}/>
