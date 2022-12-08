@@ -30,9 +30,9 @@ export default function Home() {
               <header className={styles.text}> Hi, I'm Dylan Adams. </header>
 
               <header className={styles.text} style={{fontSize:'calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}> 
-                I'm currently a Junior B.S. Computer Science student  <br/> 
-                at UNC Charlotte with a passion for <br/> 
-                programming and web development.
+                I'm currently a Junior B.S. Computer Science student at UNC Charlotte  <br/> 
+                with a passion for programming <br/> 
+                and web development.
               </header>
 
               <header className={styles.text} style={{fontSize:'calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}>
