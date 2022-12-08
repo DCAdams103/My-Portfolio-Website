@@ -52,7 +52,7 @@ export default function Home() {
 
           {/* ------------ Right Side Panel ------------ */}
           <Box className={styles.right} style={{background:'none'}}>
-            <Image src='/Dylan-2.jpg' width={700} height={530} alt="Dylan Adams" className={styles.img} />
+            <Image src='/Dylan-2.jpg' width={700} height={530} alt="Dylan Adams" className={styles.img} priority/>
           </Box>
 
         </Grid>
@@ -104,7 +104,7 @@ export default function Home() {
 
       {/* Real Home Photography Photo */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive"  width='10vw' height='5vh' src='/Frontpage1.png' alt="Real Home Photography Front Page" />
+        <Image layout="responsive"  width='10vw' height='5vh' src='/Frontpage1.png' alt="Real Home Photography Front Page" priority />
       </Box>
 
       <br/>
@@ -132,7 +132,7 @@ export default function Home() {
 
       {/* React Auth Images */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" width='10vw' height='5vh' src='/ReactAuth.png' alt="React Auth login page" />
+        <Image layout="responsive" width='10vw' height='5vh' src='/ReactAuth.png' alt="React Auth login page" priority/>
       </Box>
 
       <br/>
@@ -155,7 +155,7 @@ export default function Home() {
 
       {/* React Calendar Images */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/ReactCalendar.png' width='10vw' height='5vh'  alt="React Calendar page" />
+        <Image layout="responsive" src='/ReactCalendar.png' width='10vw' height='5vh'  alt="React Calendar page" priority />
       </Box>
 
       {/* ------------------------------------------- Future Projects ------------------------------------------ */}
