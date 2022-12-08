@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SourceCodePro";
+  src: local('SourceCodePro'), url(./SourceCodePro.ttf) format('truetype');
+}
+
 .page {
   background-color: rgb(94, 127, 127);
   min-height: 380vh;
@@ -24,6 +29,11 @@
   justify-content: center; 
 }
 
+.imgSizes {
+  width: 10vw;
+  height: 5vh;
+}
+
 .intro {
   max-width: 38vw;
   
@@ -36,15 +46,16 @@
 .text {
   padding-top: 3vh;
   color: white;
-  font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 20px;
   text-align: center;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'SourceCodePro';
 }
 
 .projectTitle {
   padding-top: 5vh;
   color: white;
-  font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 20px;
+  /* calc(18px + (35 - 18) * ((100vw - 300px) / (1600 - 300))) */
   font-weight:'bold';
   text-align: center;
   font-family: 'Source Code Pro', monospace;

@@ -1,15 +1,15 @@
 import styles from '../styles/Home.module.css'
 import { Grid, Box } from '@material-ui/core'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 export default function Home() {
   return (
     <div className={styles.page}>
 
-    {/* Import a font from Google */}
+    {/* Import a font from Google 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
-    </style>
+    </style>*/}
 
       {/* ------------ Top Half of Page ------------ */}
       
@@ -104,7 +104,7 @@ export default function Home() {
 
       {/* Real Home Photography Photo */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/Frontpage1.png' width='10vw' height='5vh'  alt="Real Home Photography Front Page" />
+        <Image layout="responsive"  width='10vw' height='5vh' src='/Frontpage1.png' alt="Real Home Photography Front Page" />
       </Box>
 
       <br/>
@@ -132,7 +132,7 @@ export default function Home() {
 
       {/* React Auth Images */}
       <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/ReactAuth.png' width='10vw' height='5vh'  alt="React Auth login page" />
+        <Image layout="responsive" width='10vw' height='5vh' src='/ReactAuth.png' alt="React Auth login page" />
       </Box>
 
       <br/>
