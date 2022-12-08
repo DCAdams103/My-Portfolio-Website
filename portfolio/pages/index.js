@@ -27,7 +27,7 @@ export default function Home() {
           
             <Box className={styles.intro}> 
 
-              <header className={styles.text}> Hi, I'm Dylan Adams. </header>
+              <header className={styles.text} style={{}}> Hi, I'm Dylan Adams. </header>
 
               <header className={styles.text} style={{fontSize:'calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}> 
                 I'm currently a Junior B.S. Computer Science student at UNC Charlotte  <br/> 
