@@ -109,10 +109,58 @@ export default function Home() {
 
       <br/>
 
+      {/* ------------------------------------------- Letterboxd Scraper ------------------------------------------ */}
+
+      <header className={styles.projectTitle}> <a href="https://letterboxd-web-scraper.vercel.app/" target="_blank"> Letterboxd.com Web Scraper </a> </header>
+      <hr style={{width:'15%'}}/>
+
+      {/* Letterboxd Scraper GitHub Link */}
+      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/Letterboxd-Web-Scraper" target="_blank"> View on Github </a></header>
+
+      {/* Letterboxd Scraper Description  */}
+      <header className={styles.text} style={{fontSize:'25px'}}> 
+          This website uses Axios and Cheerio to scrape information <br/>
+          from a list of movies on letterboxd.com and shows the user <br/>
+          a random movie for them to watch.  
+      </header>
+
+      {/* Letterboxd Scraper Link */}
+      <header className={styles.text} style={{fontSize:'25px', paddingTop:'1%'}}> 
+          Successfully deployed at <a href="https://letterboxd-web-scraper.vercel.app/" target="_blank">letterboxd-web-scraper.vercel.app</a>
+      </header>
+
+      <br />
+
+      {/* Letterboxd Scraper Photo */}
+      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
+        <Image layout="responsive"  width='10vw' height='5vh' src='/Letterboxd.png' alt="Real Home Photography Front Page" priority />
+      </Box>
+
       {/* ------------------------------------------- Current Projects ------------------------------------------ */}
 
       <header className={styles.text} style={{fontSize:'60px'}}> Current Projects </header>
       <hr style={{width:'25%'}}/>
+
+      {/* ------------------------------------------- React Calendar ------------------------------------------ */}
+
+      {/* React Calendar GitHub Link */}
+      <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> React Calendar </a> </header>
+      <hr style={{width:'15%'}}/>
+
+      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> View on Github </a></header>
+
+      {/* React Calendar Description */}
+      <header className={styles.text} style={{fontSize:'25px'}}> 
+          A personal project to make a basic calendar app that communicates with a database. <br/>
+          It's built with Next.js, and connects to Google's Firebase for Authentication.
+      </header>
+
+      <br/>
+
+      {/* React Calendar Images */}
+      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
+        <Image layout="responsive" src='/ReactCalendar.png' width='10vw' height='5vh'  alt="React Calendar page" priority />
+      </Box>
 
       {/* ------------------------------------------- React Auth ------------------------------------------ */}
 
@@ -136,27 +184,6 @@ export default function Home() {
       </Box>
 
       <br/>
-
-      {/* ------------------------------------------- React Calendar ------------------------------------------ */}
-
-      {/* React Calendar GitHub Link */}
-      <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> React Calendar </a> </header>
-      <hr style={{width:'15%'}}/>
-
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> View on Github </a></header>
-
-      {/* React Calendar Description */}
-      <header className={styles.text} style={{fontSize:'25px'}}> 
-          A personal project to make a basic calendar app that communicates with a database. <br/>
-          It's built with Next.js, and connects to Google's Firebase.
-      </header>
-
-      <br/>
-
-      {/* React Calendar Images */}
-      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/ReactCalendar.png' width='10vw' height='5vh'  alt="React Calendar page" priority />
-      </Box>
 
       {/* ------------------------------------------- Future Projects ------------------------------------------ */}
 
