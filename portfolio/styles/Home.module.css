@@ -6,11 +6,41 @@
 .page {
   background-color: rgb(94, 127, 127);
   min-height: 380vh;
+  min-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.socials {
+  width: 4vw;
 }
 
 .header {
   background-image: linear-gradient(rgb(0, 88, 155), rgb(94, 127, 127));
   min-height: 90vh;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.imageContainer {
+  position: relative;
+  width: 70vw;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin-top: 3vh;
 }
 
 .left {
@@ -43,10 +73,28 @@
   margin-top: 6vh;
 }
 
-.text {
+.intro header {
   padding-top: 3vh;
   color: white;
-  font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 1.75vmax;
+  text-align: center;
+  font-family: 'SourceCodePro';
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.text {
+  color: white;
+  font-size: 1.5vmax;
+  text-align: center;
+  font-family: 'SourceCodePro';
+  padding: 2vh;
+}
+
+.textHeaders {
+  padding-top: 3vh;
+  color: white;
+  font-size: 5vmax;
   text-align: center;
   font-family: 'SourceCodePro';
 }
@@ -54,10 +102,26 @@
 .projectTitle {
   padding-top: 5vh;
   color: white;
-  font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 3.5vmax;
   font-weight:'bold';
   text-align: center;
   font-family: 'SourceCodePro';
+}
+
+#current { 
+  padding-top: 15vh;
+}
+
+#future {
+  padding-top: 5vh;
+}
+
+.projectTitle a {
+  color: rgba(162, 79, 79, 1);
+}
+
+.text a {
+  color: #301A46;
 }
 
 .img {
@@ -72,8 +136,51 @@
   }
 
   .intro {
-    min-width: 78vw;
+    min-width: 65vw;
     max-height: 54vh;
+  }
+
+  .right {
+    max-width: 65vw;
+  }
+
+  .intro header {
+    font-size: 2.5vmax;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .intro {
+    min-width: 85vw;
+  }
+
+  .right {
+    max-width: 85vw;
+  }
+
+  .intro header {
+    font-size: 2vmax;
+  }
+
+  .textHeaders {
+    font-size: 6vmax;
+  }
+
+  .projectTitle {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 5vmax
+  }
+
+  .text {
+    font-size: 3vmax;
+    padding: 1.5vh;
+  }
+
+  .imageContainer {
+    width: 90vw;
   }
 
 }

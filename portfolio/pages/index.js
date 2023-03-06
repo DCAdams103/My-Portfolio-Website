@@ -11,7 +11,8 @@ export default function Home() {
       @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
     </style>*/}
 
-      {/* ------------ Top Half of Page ------------ */}
+    <div className={styles.container}>
+        {/* ------------ Top Half of Page ------------ */}
       
       <div className={styles.header}>
 
@@ -20,35 +21,35 @@ export default function Home() {
               spacing={0}
               direction="row"
               alignItems="center"
-              justify="space-around"
+              justifyContent="space-around"
               style={{minHeight:'50vh'}}>
-          
+        
           {/* ------------ Left Side Panel ------------ */}
-          
-            <Box className={styles.intro}> 
+        
+          <Box className={styles.intro}> 
 
-              <header className={styles.text} style={{}}> Hi, I'm Dylan Adams. </header>
+            <header> Hi, I'm Dylan Adams. </header>
 
-              <header className={styles.text} style={{fontSize:'calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}> 
-                I'm currently a Junior B.S. Computer Science student at UNC Charlotte  <br/> 
-                with a passion for programming <br/> 
-                and web development.
+            <header> 
+              I'm currently a Junior B.S. Computer Science student at UNC Charlotte  <br/> 
+              with a passion for programming <br/> 
+              and web development.
+            </header>
+
+            <header>
+              Scroll down to see my completed,<br/>
+              current, and future <br/>
+              Web Development projects.
+
+              {/* HTML for the Arrow */}
+              <header style={{padding:0, paddingTop:'3vh'}}>
+                &#8595;
               </header>
 
-              <header className={styles.text} style={{fontSize:'calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));', paddingBottom:'1vh'}}>
-                Scroll down to see my completed,<br/>
-                current, and future <br/>
-                Web Development projects.
+            </header>
 
-                {/* HTML for the Arrow */}
-                <header className={styles.text} style={{padding:0, paddingTop:'3vh'}}>
-                  &#8595;
-                </header>
-
-              </header>
-
-            </Box>
-          
+          </Box>
+        
 
           {/* ------------ Right Side Panel ------------ */}
           <Box className={styles.right} style={{background:'none'}}>
@@ -58,140 +59,147 @@ export default function Home() {
         </Grid>
 
         {/* ------------ Social Links ------------ */}
-        <header className={styles.text} style={{fontSize:'20px'}}> Find me on :</header>
+        <header className={styles.text}> Find me on :</header>
         <Grid container
               spacing={0}
               direction="row"
               alignItems="center"
-              justify="center"
-              style={{minHeight:'10vh'}}>
+              justifyContent="center">
           
           
-          <a href="https://www.linkedin.com/in/dylan-c-adams/" target='_blank'><Image src='/linkedin.png' width={40} height={40} alt="LinkedIn" /></a>
+          <a href="https://www.linkedin.com/in/dylan-c-adams/" target='_blank'><Image src='/linkedin.png' width='45vw' height='45vh' alt="LinkedIn" /></a>
           <p style={{padding:'1vw'}} />
-          <a href="https://github.com/DCAdams103" target='_blank'><Image src='/github.png'  width={40} height={40} alt="LinkedIn" /></a>
+          <a href="https://github.com/DCAdams103" target='_blank'><Image src='/github.png'  width='45vw' height='45vh' alt="LinkedIn" /></a>
 
         </Grid>
 
-      </div>
+      </div>  
+      
+      
+    </div>
 
       {/* ------------ Bottom Half of Page ------------ */}
 
-      <header className={styles.text} style={{fontSize:'60px'}}> Completed Projects </header>
-      {/* Divider Line */}
-      <hr style={{width:'25%'}}/>
+      <div className={styles.projectsContainer}>
+        <header className={styles.textHeaders}> Completed Projects </header>
+        {/* Divider Line */}
+        <hr style={{width:'25%'}}/>
 
-      {/* ------------------------------------------- Real Home Photography ------------------------------------------ */}
+        {/* ------------------------------------------- Real Home Photography ------------------------------------------ */}
 
-      <header className={styles.projectTitle}> <a href="https://www.rhomephotography.com" target="_blank"> Real Home Photography </a> </header>
-      <hr style={{width:'15%'}}/>
+        <header className={styles.projectTitle}> <a href="https://www.rhomephotography.com" target="_blank"> Real Home Photography </a> </header>
+        <hr style={{width:'15%'}}/>
 
-      {/* Real Home Photography GitHub Link */}
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/Real-Home-Photography-Website" target="_blank"> View on Github </a></header>
-      
-      {/* Real Home Photography Description  */}
-      <header className={styles.text} style={{fontSize:'25px'}}> 
+        {/* Real Home Photography GitHub Link */}
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/Real-Home-Photography-Website" id='github' target="_blank"> View on Github </a></header>
+
+        
+
+        {/* Real Home Photography Description  */}
+        <header className={styles.text}> 
           A responsive, and mobile-friendly website I designed for a <br/>
           local real estate photography business, Real Home Photography. 
-      </header>
+        </header>
 
-      {/* Real Home Photography Link */}
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'1%'}}> 
+        {/* Real Home Photography Link */}
+        <header className={styles.text}> 
           Successfully deployed at <a href="https://www.rhomephotography.com" target="_blank">www.rhomephotography.com</a>
-      </header>
+        </header>
 
-      <br/>
+        <br/>
 
-      {/* Real Home Photography Photo */}
-      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive"  width='10vw' height='5vh' src='/Frontpage1.png' alt="Real Home Photography Front Page" priority />
-      </Box>
+        {/* Real Home Photography Photo */}
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/Frontpage1.png' alt="Real Home Photography" priority />
+        </Box>
 
-      <br/>
+        <br/>
 
-      {/* ------------------------------------------- Letterboxd Scraper ------------------------------------------ */}
+        {/* ------------------------------------------- Letterboxd Scraper ------------------------------------------ */}
 
-      <header className={styles.projectTitle}> <a href="https://letterboxd-web-scraper.vercel.app/" target="_blank"> Letterboxd.com Web Scraper </a> </header>
-      <hr style={{width:'15%'}}/>
+        <header className={styles.projectTitle}> <a href="https://letterboxd-web-scraper.vercel.app/" target="_blank"> Letterboxd.com Web Scraper </a> </header>
+        <hr style={{width:'15%'}}/>
 
-      {/* Letterboxd Scraper GitHub Link */}
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/Letterboxd-Web-Scraper" target="_blank"> View on Github </a></header>
+        {/* Letterboxd Scraper GitHub Link */}
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/Letterboxd-Web-Scraper" id='github' target="_blank"> View on Github </a></header>
 
-      {/* Letterboxd Scraper Description  */}
-      <header className={styles.text} style={{fontSize:'25px'}}> 
+        {/* Letterboxd Scraper Description  */}
+        <header className={styles.text}> 
           This website uses Axios and Cheerio to scrape information <br/>
           from a list of movies on letterboxd.com and shows the user <br/>
           a random movie for them to watch.  
-      </header>
+        </header>
 
-      {/* Letterboxd Scraper Link */}
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'1%'}}> 
+        {/* Letterboxd Scraper Link */}
+        <header className={styles.text}> 
           Successfully deployed at <a href="https://letterboxd-web-scraper.vercel.app/" target="_blank">letterboxd-web-scraper.vercel.app</a>
-      </header>
+        </header>
 
-      <br />
+        <br />
 
-      {/* Letterboxd Scraper Photo */}
-      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive"  width='10vw' height='5vh' src='/Letterboxd.png' alt="Real Home Photography Front Page" priority />
-      </Box>
+        {/* Letterboxd Scraper Photo */}
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/letterboxd.png' alt="Letterboxd Web Scraper" priority />
+        </Box>
 
-      {/* ------------------------------------------- Current Projects ------------------------------------------ */}
+        {/* ------------------------------------------- Current Projects ------------------------------------------ */}
 
-      <header className={styles.text} style={{fontSize:'60px'}}> Current Projects </header>
-      <hr style={{width:'25%'}}/>
+        <header className={styles.textHeaders} id={styles.current}> Current Projects </header>
+        <hr style={{width:'25%'}}/>
 
-      {/* ------------------------------------------- React Calendar ------------------------------------------ */}
+        {/* ------------------------------------------- React Calendar ------------------------------------------ */}
 
-      {/* React Calendar GitHub Link */}
-      <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> React Calendar </a> </header>
-      <hr style={{width:'15%'}}/>
+        {/* React Calendar GitHub Link */}
+        <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> React Calendar </a> </header>
+        <hr style={{width:'15%'}}/>
 
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> View on Github </a></header>
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> View on Github </a></header>
 
-      {/* React Calendar Description */}
-      <header className={styles.text} style={{fontSize:'25px'}}> 
+        {/* React Calendar Description */}
+        <header className={styles.text}> 
           A personal project to make a basic calendar app that communicates with a database. <br/>
           It's built with Next.js, and connects to Google's Firebase for Authentication.
-      </header>
+        </header>
 
-      <br/>
+        <br/>
 
-      {/* React Calendar Images */}
-      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" src='/ReactCalendar.png' width='10vw' height='5vh'  alt="React Calendar page" priority />
-      </Box>
+        {/* React Calendar Images */}
+        
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/ReactCalendar.png' alt="React Calendar page" priority />
+        </Box>
 
-      {/* ------------------------------------------- React Auth ------------------------------------------ */}
+        {/* ------------------------------------------- React Auth ------------------------------------------ */}
 
-      <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> React Authentication </a> </header>
-      <hr style={{width:'15%'}}/>
+        <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> React Authentication </a> </header>
+        <hr style={{width:'15%'}}/>
 
-      {/* React Auth GitHub Link */}
-      <header className={styles.text} style={{fontSize:'25px', paddingTop:'0'}}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> View on Github </a></header>
-      
-      {/* React Auth Description */}
-      <header className={styles.text} style={{fontSize:'25px'}}> 
+        {/* React Auth GitHub Link */}
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> View on Github </a></header>
+
+        {/* React Auth Description */}
+        <header className={styles.text}> 
           A personal project to learn more about authentication. <br/>
           It's built with Next.js, and connects to a local MySQL database.
-      </header>
+        </header>
 
-      <br/>
+        <br/>
 
-      {/* React Auth Images */}
-      <Box style={{paddingLeft:'10vw', paddingRight:'10vw'}}>
-        <Image layout="responsive" width='10vw' height='5vh' src='/ReactAuth.png' alt="React Auth login page" priority/>
-      </Box>
+        {/* React Auth Images */}
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/ReactAuth.png' alt="React Auth login page" priority />
+        </Box>
 
-      <br/>
+        <br/>
 
-      {/* ------------------------------------------- Future Projects ------------------------------------------ */}
+        {/* ------------------------------------------- Future Projects ------------------------------------------ */}
 
-      <header className={styles.text} style={{fontSize:'60px'}}> Future Projects </header>
-      <hr style={{width:'25%'}}/>
-      
-      {/* List */}
-      <header className={styles.text} style={{fontSize:'25px'}}>
+        <header className={styles.textHeaders} id={styles.future}> Future Projects </header>
+
+        <hr style={{width:'25%'}}/>
+
+        {/* List */}
+        <header className={styles.text}>
           I hope to accomplish and learn more about...
           <p></p>
           <ul>
@@ -201,10 +209,13 @@ export default function Home() {
             <li> Back-end development </li>
             <li> Databases </li>
           </ul>
-      </header>
+        </header>
 
-      <br/>
-      <br/>
+        <br/>
+        <br/>
+      </div>
+
+      
 
     </div>
     
