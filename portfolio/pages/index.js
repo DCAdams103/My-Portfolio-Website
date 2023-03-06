@@ -139,7 +139,7 @@ export default function Home() {
 
         {/* Letterboxd Scraper Photo */}
         <Box className={styles.imageContainer}>
-          <Image className={styles.images} layout='fill' src='/letterboxd.png' alt="Letterboxd Web Scraper" priority />
+          <Image className={styles.images} layout='fill' src='/Letterboxd.png' alt="Letterboxd Web Scraper" priority />
         </Box>
 
         {/* ------------------------------------------- Current Projects ------------------------------------------ */}
