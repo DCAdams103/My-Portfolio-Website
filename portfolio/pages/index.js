@@ -31,7 +31,7 @@ export default function Home() {
             <header> Hi, I'm Dylan Adams. </header>
 
             <header> 
-              I'm currently a Junior B.S. Computer Science student at UNC Charlotte  <br/> 
+              I'm currently a Senior B.S. Computer Science student at UNC Charlotte  <br/> 
               with a passion for programming <br/> 
               and web development.
             </header>
@@ -39,7 +39,7 @@ export default function Home() {
             <header>
               Scroll down to see my completed,<br/>
               current, and future <br/>
-              Web Development projects.
+              Programming projects.
 
               {/* HTML for the Arrow */}
               <header style={{padding:0, paddingTop:'3vh'}}>
@@ -203,8 +203,8 @@ export default function Home() {
           I hope to accomplish and learn more about...
           <p></p>
           <ul>
-            <li> a Calendar Desktop and Web App </li>
-            <li> Authentication </li>
+            <li>C++ Paper Trading application</li>
+            <li>Python data visualization</li>
             <li> Redux </li>
             <li> Back-end development </li>
             <li> Databases </li>
