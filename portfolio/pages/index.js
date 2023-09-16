@@ -147,6 +147,28 @@ export default function Home() {
         <header className={styles.textHeaders} id={styles.current}> Current Projects </header>
         <hr style={{width:'25%'}}/>
 
+        {/* ------------------------------------------- Java Socket Program ------------------------------------------ */}
+
+        {/* Java Socket Program GitHub Link */}
+        <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/Pixie_ScreenFileSharing" target="_blank"> Java Socket Program </a> </header>
+        <hr style={{width:'15%'}}/>
+
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/Pixie_ScreenFileSharing" target="_blank"> View on Github </a></header>
+
+        {/* Java Socket Program Description */}
+        <header className={styles.text}> 
+          A project to learn about Java Sockets to allow the user to (eventually) <br/>
+          send images, files and share their screen.
+        </header>
+
+        <br/>
+
+        {/* Java Socket Program Images */}
+        
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/JavaSockets.png' alt="React Calendar page" priority />
+        </Box>
+
         {/* ------------------------------------------- React Calendar ------------------------------------------ */}
 
         {/* React Calendar GitHub Link */}
@@ -171,13 +193,13 @@ export default function Home() {
 
         {/* ------------------------------------------- React Auth ------------------------------------------ */}
 
-        <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> React Authentication </a> </header>
+        {/* <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> React Authentication </a> </header>
         <hr style={{width:'15%'}}/>
 
-        {/* React Auth GitHub Link */}
+        {/* React Auth GitHub Link
         <header className={styles.text}> <a href="https://github.com/DCAdams103/React-Auth" target="_blank"> View on Github </a></header>
 
-        {/* React Auth Description */}
+        {/* React Auth Description
         <header className={styles.text}> 
           A personal project to learn more about authentication. <br/>
           It's built with Next.js, and connects to a local MySQL database.
@@ -185,12 +207,12 @@ export default function Home() {
 
         <br/>
 
-        {/* React Auth Images */}
+        {/* React Auth Images
         <Box className={styles.imageContainer}>
           <Image className={styles.images} layout='fill' src='/ReactAuth.png' alt="React Auth login page" priority />
         </Box>
 
-        <br/>
+        <br/> */}
 
         {/* ------------------------------------------- Future Projects ------------------------------------------ */}
 
