@@ -169,15 +169,15 @@ export default function Home() {
           <Image className={styles.images} layout='fill' src='/JavaSockets.png' alt="React Calendar page" priority />
         </Box>
 
-        {/* ------------------------------------------- React Calendar ------------------------------------------ */}
+        {/* ------------------------------------------- React Calendar ------------------------------------------
 
-        {/* React Calendar GitHub Link */}
+        {/* React Calendar GitHub Link
         <header className={styles.projectTitle}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> React Calendar </a> </header>
         <hr style={{width:'15%'}}/>
 
         <header className={styles.text}> <a href="https://github.com/DCAdams103/React-Calendar" target="_blank"> View on Github </a></header>
 
-        {/* React Calendar Description */}
+        {/* React Calendar Description
         <header className={styles.text}> 
           A personal project to make a basic calendar app that communicates with a database. <br/>
           It's built with Next.js, and connects to Google's Firebase for Authentication.
@@ -185,7 +185,7 @@ export default function Home() {
 
         <br/>
 
-        {/* React Calendar Images */}
+        {/* React Calendar Images
         
         <Box className={styles.imageContainer}>
           <Image className={styles.images} layout='fill' src='/ReactCalendar.png' alt="React Calendar page" priority />
