@@ -4,7 +4,7 @@
 }
 
 .page {
-  background-color: rgb(94, 127, 127);
+  background-color: rgb(132, 161, 161);
   min-height: 380vh;
   min-width: 100%;
 }
@@ -21,7 +21,7 @@
 }
 
 .header {
-  background-image: linear-gradient(rgb(0, 88, 155), rgb(94, 127, 127));
+  background-image: linear-gradient(rgb(0, 88, 155), rgb(132, 161, 161));
   min-height: 90vh;
 }
 

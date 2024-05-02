@@ -31,7 +31,7 @@ export default function Home() {
             <header> Hi, I'm Dylan Adams. </header>
 
             <header> 
-              I'm currently a Senior B.S. Computer Science student at UNC Charlotte  <br/> 
+              I'm currently a Graduating B.S. Computer Science student at UNC Charlotte  <br/> 
               with a passion for programming <br/> 
               and web development.
             </header>
@@ -140,6 +140,49 @@ export default function Home() {
         {/* Letterboxd Scraper Photo */}
         <Box className={styles.imageContainer}>
           <Image className={styles.images} layout='fill' src='/Letterboxd.png' alt="Letterboxd Web Scraper" priority />
+        </Box>
+
+        {/* ------------------------------------------- Weather App ITIS 4340 ------------------------------------------ */}
+
+        <header className={styles.projectTitle}> Weather App </header>
+        <hr style={{width:'15%'}}/>
+
+        {/* Weather App GitHub Link */}
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/Weather-App-ITIS-4340/" id='github' target="_blank"> View on Github </a></header>
+
+        {/* Weather App Description  */}
+        <header className={styles.text}> 
+          This website uses three different APIs <br/>
+          to gather weather information and maps <br/> 
+        </header>
+
+        <br />
+
+        {/* Weatherr Photo */}
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/Weather.png' alt="Weather App" priority />
+        </Box>
+
+        {/* ------------------------------------------- Pokemon App ITIS 4340 ------------------------------------------ */}
+
+        <header className={styles.projectTitle}> Pokemon App </header>
+        <hr style={{width:'15%'}}/>
+
+        {/* Weather App GitHub Link */}
+        <header className={styles.text}> <a href="https://github.com/DCAdams103/Pokemon-App-ITIS-4340/" id='github' target="_blank"> View on Github </a></header>
+
+        {/* Weather App Description  */}
+        <header className={styles.text}> 
+          This website is a Pokedex for Generation 1. <br/>
+          While it's a little ugly, it contains a <br/>
+          vertical carousel I made from scratch <br /> 
+        </header>
+
+        <br />
+
+        {/* Weatherr Photo */}
+        <Box className={styles.imageContainer}>
+          <Image className={styles.images} layout='fill' src='/Pokemon.png' alt="Weather App" priority />
         </Box>
 
         {/* ------------------------------------------- Current Projects ------------------------------------------ */}
